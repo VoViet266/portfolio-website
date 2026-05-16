@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quốc Việt Võ | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter">Viet<span class="text-blue-500">Quoc.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-blue-400 transition">Giới thiệu</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Kỹ năng</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Dự án</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-blue-400 font-semibold tracking-wide mb-2">👋 XIN CHÀO, TÔI LÀ</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Quốc Việt <span class="gradient-text">Võ</span></h1>
+                <h2 class="text-2xl md:text-3xl text-gray-400 font-medium mb-6">Full-Stack Developer</h2>
+                <p class="text-gray-400 leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                    Sinh viên năm cuối ngành Kỹ thuật Phần mềm tại CTUT. Đam mê biến các bài toán phức tạp thành các giải pháp phần mềm tối ưu, thân thiện với người dùng và có khả năng mở rộng tốt.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition shadow-lg shadow-blue-500/30">Xem Dự Án</a>
+                    <a href="#contact" class="px-8 py-3 bg-transparent border border-gray-600 hover:border-gray-400 text-gray-300 rounded-lg font-medium transition">Liên Hệ</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <!-- Thay link ảnh dưới đây bằng link ảnh thật của bạn -->
+                <div class="w-72 h-72 rounded-full border-4 border-blue-500/50 p-2 overflow-hidden shadow-2xl shadow-blue-500/20">
+                    <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Avatar" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Về <span class="text-blue-400">Bản Thân</span></h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Mình hiện đang sinh sống và học tập tại Cần Thơ. Mình có kinh nghiệm phát triển ứng dụng từ Frontend, Mobile đến Backend và Database. Mình luôn chủ động tích hợp các công cụ AI để tối ưu hóa quy trình làm việc.
+            </p>
+    
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Kỹ Năng <span class="text-blue-400">Chuyên Môn</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Frontend & Mobile -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400"><i class="fa-solid fa-mobile-screen mr-2"></i>Frontend & Mobile</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">ReactJS</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Flutter</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400"><i class="fa-solid fa-server mr-2"></i>Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Express</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">NestJS</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">.NET (C#)</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Python</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400"><i class="fa-solid fa-database mr-2"></i>Database</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">MySQL</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Tools & AI -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400"><i class="fa-solid fa-microchip mr-2"></i>AI, Web3 & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Rasa (NLP)</span>
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Docker</span>
+                       
+                        <span class="px-3 py-1 bg-gray-700 text-sm rounded-full">Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Dự Án <span class="text-blue-400">Nổi Bật</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:-translate-y-2 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">TechShop eCommerce</h3>
+                        <p class="text-gray-400 mb-4 text-sm">ReactJS • NestJS • Rasa AI</p>
+                        <p class="text-gray-300 mb-6">Nền tảng thương mại điện tử toàn diện. Điểm nhấn của hệ thống là việc tích hợp chatbot AI sử dụng framework NLP Rasa để hỗ trợ chăm sóc khách hàng tự động.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium"><i class="fa-brands fa-github mr-2"></i>Xem mã nguồn</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:-translate-y-2 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">MediBook</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Flutter • .NET • PostgreSQL</p>
+                        <p class="text-gray-300 mb-6">Ứng dụng đa nền tảng giúp người dùng đặt lịch khám bệnh và quản lý hồ sơ y tế an toàn, với hệ thống API mạnh mẽ phía backend.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium"><i class="fa-brands fa-github mr-2"></i>Xem mã nguồn</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:-translate-y-2 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Hệ thống Truy xuất Nông sản</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Web3 • Solidity • IPFS</p>
+                        <p class="text-gray-300 mb-6">Giải pháp ứng dụng Blockchain và Smart Contract để theo dõi, minh bạch hóa các giai đoạn của chuỗi cung ứng nông sản.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium"><i class="fa-brands fa-github mr-2"></i>Xem mã nguồn</a>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Sẵn sàng hợp tác?</h2>
+            <p class="text-gray-400 mb-8">Mình luôn cởi mở với các cơ hội nghề nghiệp mới và các dự án thú vị. Hãy kết nối với mình nhé!</p>
+            <div class="flex justify-center gap-6">
+                <!-- Thay link của bạn vào dấu # -->
+                <a href="https://github.com/VoViet266" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-xl text-gray-300">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+               
+                <a href="mailto:voviet266@gmail.com" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-xl text-gray-300">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-gray-900 border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Quốc Việt Võ. Built with HTML & Tailwind CSS.</p>
+    </footer> -->
+
+</body>
+</html>
